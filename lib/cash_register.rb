@@ -10,10 +10,6 @@ class CashRegister
     @last_item
   end
   
-  def total
-    @total
-  end
-  
   def add_item(title, price, quantity = 1)
     @last_item = price * quantity
     new_item = @total += price * quantity
